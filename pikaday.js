@@ -536,7 +536,8 @@
             }
             while ((pEl = pEl.parentNode));
             if (self._v && target !== opts.trigger && pEl !== opts.trigger) {
-                self.hide();
+                // TODO This causes chrome to show and immediately hide when input is clicked?
+                // self.hide();
             }
         };
 
